@@ -120,22 +120,5 @@ namespace Contact_Manager
                 Console.WriteLine("Input cannot be empty");
             }
         }
-
-        public void ViewContacts(List<Contact> contacts)
-        {
-            if (contacts == null || contacts.Count == 0)
-            {
-                Console.WriteLine("No contacts available.");
-                return;
-            }
-
-            Console.WriteLine("Contacts");
-            foreach (var contact in contacts)
-            {
-                Console.WriteLine($"Name: {contact.Name}");
-                Console.WriteLine($"Phone: {contact.PhoneNumber}");
-                Console.WriteLine($"Email : {contact.Email}");
-            }
-        }
     }
 }
